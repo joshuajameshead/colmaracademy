@@ -18,10 +18,11 @@ html {
 /* Header Section */
 header {
   height: 64px;
+  z-index: 100;
+  width: 100%;
 }
 
 nav {
-  padding: 1rem 0;
   background-color: white;
   display: flex;
   align-items: center;
@@ -34,23 +35,25 @@ nav div {
 }
 
 nav img {
-  height: 3rem;
+  height: 2.5rem;
   margin-left: 1.25rem;
+  padding-right: 0.25rem;
 }
 
 nav span {
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 ul {
   margin-right: 1.5rem;
+  display: flex;
 }
 
 ul li {
   display: inline;
   padding: 0 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 ul li a {
@@ -62,11 +65,52 @@ ul li a {
   /* Start Container */
 .main {
   background-color: lightgray;
+  max-width: 100%;
+  display: flex;
 }
 
-.main img {
+.image {
   width: 60%;
   padding: 2rem 1.5rem;
+  overflow: hidden;
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main h1,
+.main h2 {
+  color: #413839;
+  margin-right: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.caption {
+  padding-left: 1.5rem;
+  margin-top: 4rem;
+  width: 30%;
+}
+
+.button {
+  background-color: #413839;
+  padding: 0.5rem;
+  text-align: center;
+  margin-right: 3rem;
+  color: white;
+}
+
+.button span {
+  width: 50%;
 }
   /* Practicing Container */
 
