@@ -1,5 +1,57 @@
-/* Header Section */
+/* Universal Styles */
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: white;
+  margin: 0;
+}
 
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header Section */
+header {
+  height: 64px;
+}
+
+nav {
+  padding: 1rem 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 3rem;
+  margin-left: 1.25rem;
+}
+
+nav span {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+ul {
+  margin-right: 1.5rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0 0.5rem;
+  font-size: 1.25rem;
+}
 /* Container Sections */
 
   /* Start Container */
