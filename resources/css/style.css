@@ -29,6 +29,10 @@ nav {
   justify-content: space-between;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav div {
   display: flex;
   align-items: center;
@@ -59,6 +63,34 @@ ul li {
 ul li a {
   text-decoration: none;
   color: black;
+}
+
+.truncated-menu {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+
+  header .container {
+    display: none;
+  }
+
+  .truncated-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .truncated-menu img {
+    height: 3rem;
+  }
+
+  .caption {
+    margin: 2rem 1rem;
+  }
+
 }
 /* Container Sections */
 
@@ -121,6 +153,34 @@ h2 {
 .main h2 {
   margin-left: 2rem;
 }
+
+@media only screen and (max-width: 480px) {
+  .main {
+    display: block;
+  }
+
+  .image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .caption {
+    margin-top: 1.5rem;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .button {
+    background-color: darkgrey;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+}
   /* Practicing Container */
 .practicing {
   max-width: 100%;
@@ -159,6 +219,17 @@ h2 {
 .info-container a {
   text-decoration: none;
   color: cornflowerblue;
+}
+
+@media only screen and (max-width: 480px) {
+  .practicing .image {
+    display: none;
+  }
+
+  .options {
+    width: 100%;
+    margin: 0;
+  }
 }
   /* Learning Container */
 .learning {
