@@ -71,51 +71,147 @@ ul li a {
 
 .image {
   width: 60%;
-  padding: 2rem 1.5rem;
+  margin: 2rem 1.5rem;
   overflow: hidden;
 }
-.image img {
+.image img,
+.image video {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-.main h1,
-.main h2 {
+h1,
+h2,
+p {
   color: #413839;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: normal;
 }
 
 .caption {
-  padding-left: 1.5rem;
   margin-top: 4rem;
-  width: 30%;
+  width: 40%;
 }
 
 .button {
   background-color: #413839;
   padding: 0.5rem;
   text-align: center;
-  margin-right: 3rem;
+  margin-right: 5rem;
   color: white;
+  margin-top: 2rem;
 }
 
 .button span {
   width: 50%;
+  font-size: 1.5rem;
+}
+
+.button,
+.main h1,
+.main h2 {
+  margin-left: 2rem;
 }
   /* Practicing Container */
+.practicing {
+  max-width: 100%;
+  display: flex;
+}
 
+.options {
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+}
+
+.option .image-container {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  width: 65%;
+}
+
+.info-container a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
   /* Learning Container */
+.learning {
+    background-color: lightgray;
+    max-width: 100%;
+}
 
+.learning h1,
+.thesis h1:first-child {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.courses {
+  padding-bottom: 2rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course {
+  width: 32%;
+  height: auto;
+  overflow: hidden;
+  background-color: white;
+}
+
+.course img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course h2,
+.course p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.course p:last-child {
+  padding-bottom: 1.5rem;
+}
   /* Thesis Container */
-
+.thesis-final {
+  max-width: 100%;
+  display: flex;
+}
 /* Footer Section */
+footer {
+  border-top: solid 1px lightgray;
+}
+
+#footer span,
+#footer li {
+  font-size: 0.9rem;
+}
