@@ -154,6 +154,10 @@ h2 {
   margin-left: 2rem;
 }
 
+#mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 480px) {
   .main {
     display: block;
@@ -172,7 +176,11 @@ h2 {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .caption h2 {
+    font-size: 1.3rem;
   }
 
   .button {
@@ -180,6 +188,78 @@ h2 {
     margin-right: 2rem;
     margin-bottom: 2rem;
   }
+
+  .options .option {
+    display: block;
+  }
+
+  .info-container h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .options .option .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .options .info-container {
+    padding-left: 1rem;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+
+  #background {
+    background-color: white;
+    border-top: solid 1px lightgray;
+  }
+
+  .learning h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .learning .courses {
+    display: block;
+    padding: 0;
+  }
+
+  .learning .courses:last-child {
+    padding-bottom: 2rem;
+    border-bottom: solid 1px lightgray;
+  }
+
+  .courses .course {
+    width: 100%;
+    background-color: lightgray;
+    margin-bottom: 0.5rem;
+  }
+
+  .course img,
+  .course p {
+    display: none;
+  }
+
+  #thesis-header {
+    padding-top: 0;
+  }
+
+  .thesis .options,
+  .thesis-final .image h2,
+  .thesis-final .image p {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+
 }
   /* Practicing Container */
 .practicing {
@@ -238,7 +318,7 @@ h2 {
 }
 
 .learning h1,
-.thesis h1:first-child {
+.thesis h1 {
   text-align: center;
   padding-top: 2rem;
 }
@@ -277,14 +357,28 @@ h2 {
   max-width: 100%;
   display: flex;
 }
+
+@media only screen and (max-width: 480px) {
+  .thesis h1 {
+    padding-top: 0;
+  }
+}
 /* Footer Section */
 footer {
   border-top: solid 1px lightgray;
   margin-left: 1.5rem;
+  padding: 2.5rem 0 1rem 0;
 }
 
 #footer span,
 #footer li {
   font-size: 0.9rem;
   color: #413839;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  footer nav ul {
+    display: none;
+  }
 }
